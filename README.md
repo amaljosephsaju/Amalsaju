@@ -1,8 +1,23 @@
-# React + Vite
+To-Do App
+Description
+This is a simple and intuitive To-Do List application built with React.js. The app allows users to add, categorize, prioritize, and manage their tasks efficiently. The UI is designed to be responsive and user-friendly, making task management a breeze.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Add Tasks: Users can add new tasks with specific details like category, priority, and due date.
 
-Currently, two official plugins are available:
+Categorization: Tasks can be categorized as 'Personal' or 'Work' for better organization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Priority Levels: Assign priority levels (High, Medium, Low) to tasks to highlight their importance.
+
+Due Dates: Set due dates for tasks to keep track of deadlines.
+
+Delete Tasks: Remove tasks that are no longer needed.
+
+Filter Tasks: Filter tasks based on category and priority to focus on what matters most.
+
+Technologies Used
+React.js: For building the user interface.
+
+useState Hook: To manage the state of the app.
+
+CSS: For styling the application.
