@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+ 
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf5ff;
+  font-family: sans-serif;
+}
+.header {
+  width: 70%;
+  height: 120px;
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  align-items: center;
+  text-align: center;
+  margin: 40px auto;
+  color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 18px;
+}
+.header h1 {
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+.btn {
+  width: 6%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(2, 205, 63);
+  border: none;
+  font-weight: bold;
+  position: absolute;
+  right: 308px;
+  top: 190px;
+  cursor: pointer;
+}
+.filter-todo {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  display: flex;
+  gap: 20px;
+}
+.filter-todo button {
+  border: none;
+  background-color: rgb(2, 205, 63);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 12px;
+  height: 33px;
+  width: 90px;
+  cursor: pointer;
+}
+
+
+
+.task-container {
+  width: 75%;
+  /* margin: 50px auto; */
+  position: relative;
+  top: 25px;
+  left: 230px;
+}
+.task-container h1 {
+  width: 85px;
+  position: relative;
+  left: 500px;
+  /* padding: 20px auto; */
+  color: #2cb21a;
+}
+.todo-list {
+  width: 90%;
+  height: 500px;
+  border: 1px solid rgb(230, 230, 230);
+  /* box-shadow: 0 0 5px 5px rgb(104, 102, 102); */
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+.todo-list::-webkit-scrollbar{
+  display: none;
+}
+.todo-item {
+  min-height: 40px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 30px;
+  font-size: 17px;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.layer {
+  width: 100%;
+  height: 100vh;
+  padding-top: 0px;
+  background-color: rgb(45, 162, 61);
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  z-index: 1;
+}
+.edit-box {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 25px;
+  box-shadow: 0 0px 10px 6px rgb(197, 221, 237);
+  top: 30%;
+  left: 35%;
+  text-align: center;
+  z-index: 2;
+}
+.modal-text {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  top: 20px;
+}
+.modal-text p {
+  color: white !important;
+  font-size: 20px;
+}
+label {
+  color: white !important;
+}
+
+.modal-text input {
+  width: 80%;
+}
+.modal-category {
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  top: 25px;
+  left: 10px;
+}
+.modal-priority {
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  gap: 15px;
+  top: 25px;
+  left: 10px;
+}
+.todo-btn {
+  position: relative;
+  left: 140px;
+  top: 35px;
+}
+.todo-btn button {
+  border: none;
+  background-color: rgb(24, 64, 38);
+  color: white;
+  border-radius: 10px;
+  font-size: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.modal-date {
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  position: relative;
+  top: 25px;
+  gap: 5px;
+  left: 10px;
+}
+.modal-text,
+.modal-category,
+.modal-priority,
+.modal-date {
+  margin-bottom: 5px;
+}
+.modal-text input,
+.modal-category select,
+.modal-priority select,
+.modal-date input {
+  width: 50%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.todo-item {
+  background-color: #0aa510;
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  text-align: left;
+}
+
+.modal-category label,
+.modal-priority label,
+.modal-date label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  position: relative;
+  top: 12px;
+  right: 10px;
+}
+
+.modal-category select,
+.modal-priority select,
+.modal-date input {
+  width: 50%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.modal-text p {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  position: relative;
+  top: 12px;
+  right: 2px;
+}
+.modal-text input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.high-priority {
+  background-color: red;
+  color: white; /* Optional: To make the text readable */
+}
+.medium-priority {
+  background-color: yellow;
+  color: black;
+}
+
+.low-priority {
+  background-color: green;
+  color: white;
+}
+.fa-trash-can{
+color: rgb(10, 10, 10);
+position: absolute;
+right: 20px;
+cursor: pointer;
+}
+
